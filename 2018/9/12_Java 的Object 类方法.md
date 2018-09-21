@@ -1,6 +1,6 @@
-﻿### Java Object类内部的方法有以下几个：
+### Java Object类内部的方法有以下几个：
 * 构造函数
-* hasCode和equal函数用来判断对象是否相等
+* hasCode()和equal()函数用来判断对象是否相等
 * wait(),wait(long),wait(long,int)和notify(),notifyAll()
 * toString(),getClass()
 * clone()用在克隆对象
@@ -66,8 +66,7 @@ p1.equal(p2) = true。那p1 == p2 吗？ 答案： 否。
 一般还要从写hashCode()方法。hashCode的作用使用来获取哈斯码，用于确定对象在哈斯表中的作用。就比如上面的例子，就假如要把p1和p2放到hashSet中，因为这两个判断上为同一个人，理想是因为HashSet的去重特性所以添加之后只存在一个。结果发现HashSet中它们两个都存在。那问题在哪呢？  
   
   
-HashSet添加元素时如果添加元素的hashCode相等并且对象equals为true或对象==，则认为同一个元素，不添加到元素中。而上面通过hasCode()方法可以获得p1。hashCode() = 105850744,p
-2.hashCode() = 210406993。显然两种hashCode不相等。
+HashSet添加元素时如果添加元素的hashCode相等并且对象equals为true或对象==，则认为同一个元素，不添加到元素中。而上面通过hasCode()方法可以获得p1。hashCode() = 105850744,p2.hashCode() = 210406993。显然两种hashCode不相等。
 
 > 引申出两个面试题：  
 
@@ -85,10 +84,10 @@ HashSet添加元素时如果添加元素的hashCode相等并且对象equals为tr
 wait(),notify(),notifyAll(),sychronize要搭配使用，用于多线程的同步。  
 * wai的作用  
   * 1、wait()总是在一个循环中被调用，被挂起等待另一个条件的成立。wait()调用会等到其他线程调用notify()或者notifyAll()时才会返回。  
-  * 2、当一个线程在执行sychronized的方法内部，调用了wait()方法后，该线程会释放该对象的锁。然后改线程会被添加到该对象的等待队列(waiting queue)中，就会一直处于闲置状态，不会被调度执行。需要注意wait()方法会强迫线程先进行释放所操作，所以在调用wait()时，该线程已获得锁，否则会抛出异常。
+  * 2、当一个线程在执行sychronized的方法内部，调用了wait()方法后，该线程会释放该对象的锁。然后该线程会被添加到该对象的等待队列(waiting queue)中，就会一直处于闲置状态，不会被调度执行。需要注意wait()方法会强迫线程先进行释放所操作，所以在调用wait()时，该线程已获得锁，否则会抛出异常。
   
 * notify(),notifyAll()  
-    * 1、当一个线程调用一个对象的notify()方法时，调度器会从所有处于该对象等待队列的线程中取出任意一个线程，将其添加到入口队列中，然后在入口队列中的多个线程就回竞争对象的锁，得到锁的线程就可以持续执行。如果等待队列没有线程，notify()方法不会产生任何作用。
+    * 1、当一个线程调用一个对象的notify()方法时，调度器会从所有处于该对象等待队列的线程中取出任意一个线程，将其添加到入口队列中，然后在入口队列中的多个线程就会竞争对象的锁，得到锁的线程就可以持续执行。如果等待队列没有线程，notify()方法不会产生任何作用。
     * 2、notifyAll()和notify()的区别是把等待队列的所有线程添加到入口队列中。
     * 3、notifyAll()比notify()更常用，因为notify()不能指定唤醒哪一个线程。  
 
