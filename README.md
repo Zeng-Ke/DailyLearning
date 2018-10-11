@@ -26,7 +26,9 @@
 + 9月  
 	+ 12号 ：[Java 的Object 类方法](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/9/12_Java%20%E7%9A%84Object%20%E7%B1%BB%E6%96%B9%E6%B3%95.md)    
 	+ 21号 ：[Android加载大图片防止OOM处理方法](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/9/21_Android%E5%8A%A0%E8%BD%BD%E5%A4%A7%E5%9B%BE%E7%89%87%E9%98%B2%E6%AD%A2OOM%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95.md)
-
+	+ 27号 ：[HTTP详解](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/9/27_HTTP%E8%AF%A6%E8%A7%A3.md)    
++ 10月  
+	+ 10号 ：[Java的反射](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/10/10_Java%E5%8F%8D%E5%B0%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)   
   
  
  
