@@ -23,7 +23,7 @@ Android中的"混淆"分为两部分。一部分是Java代码的优化与混淆�
 
 这里主要说Java代码的优化与混淆。流程如下图：
 
-![2](img/2)
+![2](img/2.png)
 
 代码混淆包含了代码压缩，优化，混淆等一系列过程。
 1. shrink(压缩) ： Proguard会递归地确定哪些类和类成员被使用，其它则被丢弃；
@@ -345,7 +345,7 @@ proguard-android.txt已经存在一些默认混淆规则，没必要在proguard-
 ### 6、解出混淆栈
 混淆前后的类、方法名等等难以阅读，对追踪线上crash造成了阻碍。可以使用sdk目录下/tools/proguard/bin中的proguardgui.bat可视化工具进行混淆定位。示例如下图：
 
-![3](img/3)
+![3](img/3.png)
 
 
 
