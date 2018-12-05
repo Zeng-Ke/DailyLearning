@@ -31,8 +31,10 @@
 	+ 10号 ：[Java的反射](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/10/10_Java%E5%8F%8D%E5%B0%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md) 
 	+ 15号 ：[Java的注解](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/10/15_Java的注解.md)    
 	+ 26号 ：[Java自定义注解处理器](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/10/26_Java自定义注解处理器.md)   
-
-  
++ 12月  
+	+ 4号 ：[BottomSheet、BottomSheetDialog和BottomSheetDialogFragment](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/12/4_BottomSheet、BottomSheetDialog和BottomSheetDialogFragment.md) 
+	+ 5号 ：[5_Android的代码混淆](https://github.com/Zeng-Ke/DailyLearning/blob/master/2018/12/5_Android的代码混淆.md)    
+	
  
  
 
